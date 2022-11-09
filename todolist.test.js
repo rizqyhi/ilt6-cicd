@@ -8,10 +8,10 @@ test("menambahkan todo", () => {
   expect(todolist.getAll()).toContain("Makan");
 });
 
-// test("menghapus todo", () => {
-//   const todolist = new TodoList(["Belanja"]);
+test("menghapus todo", () => {
+  const todolist = new TodoList(["Belanja"]);
 
-//   todolist.remove(0);
+  todolist.remove(0);
 
-//   expect(todolist.getAll()).toBe([]);
-// });
+  expect(todolist.getAll()).toBe([]);
+});
